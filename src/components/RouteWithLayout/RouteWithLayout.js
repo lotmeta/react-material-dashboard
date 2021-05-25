@@ -11,10 +11,6 @@ const RouteWithLayout = props => {
     return (<h1>Carregando</h1>);
   }
 
-  console.log({ ...rest });
-  console.log(Component);
-
-
   if (IsPrivate && !Signed) {
     return (<Redirect to="/sign-in" />);
   }

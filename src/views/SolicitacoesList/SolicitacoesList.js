@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/styles';
-import { useParams } from 'react-router-dom';
 import { SolicitacoesToolbar, SolicitacoesTable } from './components';
 import mockData from './data';
 
