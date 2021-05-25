@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import { Chart } from 'react-chartjs-2';
@@ -28,7 +28,7 @@ validate.validators = {
 };
 
 
-const App = props => {
+const App = () => {
 
   //const [state, setState] = useState(data);
 

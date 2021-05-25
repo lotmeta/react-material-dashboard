@@ -38,7 +38,7 @@ function AuthProvider({ children }) {
   async function signIn(email, password) {
     try {
       setLoading(true);
-      console.log(token);
+      console.log(email + password + token);
       //const dados = { email, password };
       //const data = await api.post('users/login', dados);
 

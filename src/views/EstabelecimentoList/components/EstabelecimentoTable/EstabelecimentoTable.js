@@ -43,8 +43,7 @@ const EstabelecimentoTable = props => {
   const classes = useStyles();
 
   const [selectedUsers] = useState([]);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
-  const [page, setPage] = useState(0);
+
 
 
 
@@ -73,7 +72,7 @@ const EstabelecimentoTable = props => {
                 </TableRow>
               </TableHead>
               <TableBody>
-                {empresas.slice(0, rowsPerPage).map(user => (
+                {empresas.map(user => (
                   <TableRow
                     className={classes.tableRow}
                     hover
