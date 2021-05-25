@@ -121,6 +121,7 @@ const Topbar = props => {
 
 Topbar.propTypes = {
   className: PropTypes.string,
+  history: PropTypes.object,
   onSidebarOpen: PropTypes.func
 };
 

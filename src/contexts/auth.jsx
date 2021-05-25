@@ -1,5 +1,5 @@
-
 import React, { createContext, useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 import api from 'services/api';
 
 
@@ -77,4 +77,10 @@ function AuthProvider({ children }) {
 
   );
 }
+
+AuthProvider.propTypes = {
+  children: PropTypes.object
+};
+
+
 export { AuthContext, AuthProvider }

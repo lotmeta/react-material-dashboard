@@ -123,7 +123,10 @@ const EstabelecimentoTable = props => {
 
 EstabelecimentoTable.propTypes = {
   className: PropTypes.string,
-  users: PropTypes.array.isRequired
+  empresas: PropTypes.array.isRequired,
+  listarSolicitacoes: PropTypes.func,
+  users: PropTypes.array.isRequired,
+
 };
 
 export default EstabelecimentoTable;
