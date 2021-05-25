@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import clsx from 'clsx';
 import PropTypes from 'prop-types';
-import moment from 'moment';
 import DescriptionTwoToneIcon from '@material-ui/icons/DescriptionTwoTone';
 import PerfectScrollbar from 'react-perfect-scrollbar';
 import { makeStyles } from '@material-ui/styles';
 import {
   Card,
-  CardActions,
   CardContent,
   Table,
   TableBody,
@@ -15,10 +13,9 @@ import {
   TableHead,
   TableRow,
   Typography,
-  TablePagination,
   IconButton
 } from '@material-ui/core';
-import { withRouter } from 'react-router';
+
 
 const useStyles = makeStyles(theme => ({
   root: {},
@@ -50,13 +47,7 @@ const EstabelecimentoTable = props => {
   const [page, setPage] = useState(0);
 
 
-  const handlePageChange = (event, page) => {
-    setPage(page);
-  };
 
-  const handleRowsPerPageChange = event => {
-    setRowsPerPage(event.target.value);
-  };
 
   const exibeSolicitacoes = (event, cnpj, nome) => {
     event.preventDefault();

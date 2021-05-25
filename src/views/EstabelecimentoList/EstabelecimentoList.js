@@ -65,8 +65,7 @@ const EstabelecimentoList = (props) => {
 
   useEffect(() => {
     listarEmpresas(cpfContadorLogado);
-    //contexto.setState({ nomeRazao: 'PORTAL DO CONTADOR', cnpj: null })    
-    setDadosEmpresa(null, null);
+    //contexto.setState({ nomeRazao: 'PORTAL DO CONTADOR', cnpj: null })        
   }, []);
 
   const listarEmpresas = (cpfContador) => {
@@ -76,6 +75,7 @@ const EstabelecimentoList = (props) => {
       const listaEmpresas = response.data;
       setEmpresas(listaEmpresas);
       setEmpresasFiltradas(listaEmpresas);
+      setDadosEmpresa(null, null);
       //console.log(listaEmpresas);
 
     }).catch(erro => {

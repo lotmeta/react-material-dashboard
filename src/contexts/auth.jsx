@@ -1,15 +1,6 @@
-import { string } from 'prop-types';
+
 import React, { createContext, useEffect, useState } from 'react';
 import api from 'services/api';
-
-
-interface Props {
-  children?: React.ReactNode;
-}
-
-interface AuthContexData {
-  signed: boolean;
-}
 
 
 const initialState = {
@@ -47,7 +38,7 @@ function AuthProvider({ children }) {
   async function signIn(email, password) {
     try {
       setLoading(true);
-
+      console.log(token);
       //const dados = { email, password };
       //const data = await api.post('users/login', dados);
 

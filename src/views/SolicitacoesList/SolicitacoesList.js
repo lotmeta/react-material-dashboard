@@ -14,7 +14,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const SolicitacoesList = () => {
-  const { cnpjEmpresa } = useParams();
+  //const { cnpjEmpresa } = useParams();
 
   const classes = useStyles();
 

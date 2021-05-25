@@ -9,7 +9,7 @@ import NotificationsIcon from '@material-ui/icons/NotificationsOutlined';
 import InputIcon from '@material-ui/icons/Input';
 import Typography from '@material-ui/core/Typography';
 
-import DataContext from '../../../../contexts/dadosEmpresa'
+//import DataContext from '../../../../contexts/dadosEmpresa'
 import { AppContext } from '../../../../contexts/Store'
 
 
