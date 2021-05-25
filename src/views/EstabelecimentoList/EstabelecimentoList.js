@@ -2,14 +2,12 @@ import React, { useContext, useEffect, useState } from 'react';
 import { makeStyles } from '@material-ui/styles';
 
 import { EstabelecimentoToolbar, EstabelecimentoTable } from './components';
-import mockData from './data';
 import axios from 'axios';
-import { string } from 'prop-types';
 import { withRouter } from 'react-router';
-import { createBrowserHistory } from 'history';
+
 import PropTypes from 'prop-types';
 
-import DataContext from 'contexts/dadosEmpresa';
+
 import { AppContext } from 'contexts/Store';
 
 const useStyles = makeStyles(theme => ({
@@ -33,11 +31,13 @@ const EstabelecimentoList = (props) => {
   //const contexto = useContext(DataContext);
   const { setDadosEmpresa } = useContext(AppContext);
 
+  /*
   const empresa = {
     nome: string,
     cnpj: string,
     vctoCertificado: string,
   }
+  */
 
   const [empresas, setEmpresas] = useState([]);
   //const [empresas] = useState(mockData);
@@ -61,7 +61,7 @@ const EstabelecimentoList = (props) => {
       setEmpresasFiltradas(listaFiltrada)
     }
 
-  }, [filtro]);
+  }, [filtro, empresas]);
 
   useEffect(() => {
     listarEmpresas(cpfContadorLogado);

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles } from '@material-ui/styles';
-import { SearchInput } from 'components';
+
 import Search from '../Search';
 
 const useStyles = makeStyles(theme => ({
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 
-const UsersToolbar = props => {
+const EstabelecimentoToolbar = props => {
   const { className, executaFiltro, ...rest } = props;
 
   const [expressaoBusca, setExpressaoBusca] = useState('');
@@ -65,8 +65,9 @@ const UsersToolbar = props => {
   );
 };
 
-UsersToolbar.propTypes = {
-  className: PropTypes.string
+EstabelecimentoToolbar.propTypes = {
+  className: PropTypes.string,
+  executaFiltro: PropTypes.string
 };
 
-export default UsersToolbar;
+export default EstabelecimentoToolbar;
